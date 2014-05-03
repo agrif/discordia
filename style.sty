@@ -1,0 +1,31 @@
+% fnord
+\newcommand{\fnord}[1]{#1}
+
+% attributions for e.g. intros
+\newenvironment{blockattribution}
+{\vspace{2em} \small \begin{tabular}{@{\hspace{2em}}p{42em}}}
+{\end{tabular}}
+
+% used for naming areas of the book of truth
+\newcommand{\bookoftruth}[1]{\textsc{#1}}
+
+% used for ``stamp'' style text
+\newcommand{\textstamp}[1]{\textsf{#1}}
+
+% used for placing absolute, rotated stamps
+\newenvironment{stamp}[3]
+{\begin{textblock}{#2}(#3) \begin{rotate}{#1} \textstamp\bgroup}
+{\egroup \end{rotate} \end{textblock}}
+
+% the five-fingered hand of eris
+\newcommand{\thehand}[1]
+{
+  \begin{tikzpicture}[scale=#1]
+    \fill (2,-1.5) arc (0:180:2) arc (180:0:2 and 1.5);
+    \fill (2,2) arc (360:180:2) arc (180:360:2 and 1.5);
+    \fill (-4,0.05) -- (-4,0.45) -- (4,0.45) -- (4,0.05) -- cycle;
+  \end{tikzpicture}
+}
+
+% rotating inline
+\newcommand{\mturn}[2]{\begin{turn}{#1}#2\end{turn}}

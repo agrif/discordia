@@ -1,0 +1,43 @@
+\documentclass[11pt]{book}
+\usepackage[paperwidth=5.5in,paperheight=8.5in]{geometry}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{yfonts}
+\usepackage{style}
+\usepackage{textpos}
+\usepackage{setspace}
+\usepackage{rotating}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{dialogue}
+\usepackage[shortcuts]{extdash}
+
+% use absolute positioning
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperheight}
+
+\makeindex
+
+\begin{document}
+
+\author{Malaclypse the Younger}
+\title{Principia Discordia}
+%\subtitle{How I Found Goddess And What I Did To Her When I Found Her}
+\date{March 1970}
+
+\frontmatter
+\maketitle
+\include{introduction-wilson}
+\include{coverpage}
+\include{interview}
+
+\mainmatter
+Mainmatter.
+
+\backmatter
+Backmatter.
+
+\include{index-extra}
+\printindex
+
+\end{document}
