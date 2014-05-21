@@ -1,0 +1,60 @@
+\index{Chao}
+\begin{center}
+\begin{tikzpicture}[y=0.80pt,x=0.80pt,yscale=-1]
+\input{figures/dancingstar}
+\end{tikzpicture}
+
+\vspace*{0.5cm}
+
+\begin{tikzpicture}[scale=1.5]
+\draw[line width=1.5] (0,0) circle(2);
+
+\shade[shading=axis,bottom color=white, top color=black, middle color=white, shading angle = -75] (-1.8,0) arc (180:360:0.85) arc (180:52:1.05) arc (28:180:1.8) -- cycle;
+\draw[line width=1] (-1.8,0) arc (180:360:0.85) arc (180:52:1.05) arc (28:180:1.8) -- cycle;
+
+\shade[shading=axis,bottom color=white, top color=black, middle color=white, shading angle = 105] (1.8,0) arc (0:180:0.85) arc (360:232:1.05) arc (208:360:1.8) -- cycle;
+\draw[line width=1] (1.8,0) arc (0:180:0.85) arc (360:232:1.05) arc (208:360:1.8) -- cycle;
+
+\begin{scope}[shift={(-0.95,0)},scale=0.65]
+\draw[rotate=30,line width=0.7] (0:1) -- (72:1) -- (144:1) -- (216:1) -- (288:1) -- cycle (0:0.8) -- (72:0.8) -- (144:0.8) -- (216:0.8) -- (288:0.8) -- cycle;;
+\end{scope}
+
+\begin{scope}[scale=0.004,yscale=-1,shift={(60,-180)}]
+\input{figures/apple}
+\end{scope}
+
+\path
+    [
+      postaction={
+        decorate,
+        decoration={
+          raise=-1ex,
+          text along path,
+%          text align/fit to path stretching spaces=true,
+          reverse path=true,
+          text align/align=center,
+          text align/left indent={11.309733552923253cm}, % \pi * radius
+          text align/right indent={0.0cm},
+          text={|\bfseries\Huge|THE SACRED}
+        }
+      }
+    ] (0,0) circle (2.4cm);
+
+\path
+    [
+      postaction={
+        decorate,
+        decoration={
+          raise=-2ex,
+          text along path,
+%          text align/fit to path stretching spaces=true,
+%          reverse path=true,
+          text align/align=center,
+          text align/left indent={11.309733552923253cm}, % \pi * radius
+          text align/right indent={0.0cm},
+          text={|\bfseries\Huge|C H A O}
+        }
+      }
+    ] (0,0) circle (2.4cm);
+\end{tikzpicture}
+\end{center}
